@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CityEmergencyService</string>
+    <string name="email_hint">email@example.com</string>
+
+    <!-- Main Screen Constants -->
+    <string name="main_screen_email_address">Логин</string>
+    <string name="main_screen_password">Пароль</string>
+    <string name="main_screen_login">login</string>
+    <string name="main_screen_forgot_password">forget your password?</string>
+    <string name="main_screen_login_enter">Войти</string>
+    <string name="main_screen_register_enter">Зарегистрироваться</string>
+    <string name="main_screen_all_right_reserved">\Ⓒ Все права защищены</string>
+    <string name="main_screen_help">Help</string>
+    <string name="main_screen_register_link">Don\'t a member yet?</string>
+
+    <!-- Main Screen Constants -->
+    <string name="register_screen_login_hint">Введите логин</string>
+    <string name="register_screen_password_hint">Введите пароль</string>
+    <string name="register_screen_first_name">Имя</string>
+    <string name="register_screen_first_name_hint">Введите имя</string>
+    <string name="register_screen_last_name">Фамилия</string>
+    <string name="register_screen_last_name_hint">Введите фамилию</string>
+    <string name="register_screen_phone_number">Номер телефона</string>
+    <string name="register_screen_phone_number_hint">Введите номер телефона</string>
+</resources>
