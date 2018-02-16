@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/marginNormal"
+    android:layout_marginLeft="@dimen/marginNormal"
+    android:layout_marginRight="@dimen/marginNormal"
+    android:background="@drawable/rounded_background_white">
+
+    <ImageView
+        android:id="@+id/personImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:layout_marginLeft="@dimen/marginNormal"
+        app:srcCompat="@drawable/ic_person"
+        />
+
+    <TextView
+        android:id="@+id/workerNameTextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/personImageView"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:text="Василий Петрович"
+        />
+
+    <TextView
+        android:id="@+id/workerPhoneTextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workerNameTextViewTitle"
+        android:layout_toRightOf="@+id/personImageView"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:paddingBottom="@dimen/paddingNormal"
+        android:text="@string/admin_screen_worker_phone"
+        />
+
+    <TextView
+        android:id="@+id/workerPhoneTextViewDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workerNameTextViewTitle"
+        android:layout_toRightOf="@+id/workerPhoneTextViewTitle"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:text="0670670670"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBar_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/marginNormal"
+        android:layout_marginTop="@dimen/marginNormal"
+        style="?android:attr/ratingBarStyleSmall"
+        />
+
+</RelativeLayout>

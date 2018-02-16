@@ -6,22 +6,22 @@
     android:background="@android:color/transparent">
 
     <Button
-        android:id="@+id/registerButton"
+        android:id="@+id/fieldButton"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/shadowLayoutColumnHeight"
-        android:layout_marginTop="@dimen/marginTop"
-        android:layout_marginBottom="@dimen/marginBottom"
-        android:layout_marginStart="@dimen/marginTopMiddleLarge"
-        android:layout_marginEnd="@dimen/marginTopMiddleLarge"
-        android:text="@string/main_screen_register_enter"
-        android:textSize="@dimen/textSize"
+        android:layout_height="@dimen/mainScreenEditTextHeight"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:layout_marginBottom="@dimen/marginNormal"
+        android:layout_marginStart="@dimen/marginNormal"
+        android:layout_marginEnd="@dimen/marginNormal"
+        android:textSize="@dimen/textSizeSmall"
         android:textColor="@color/black"
         android:fontFamily="sans-serif"
         android:letterSpacing="0.24"
         android:textAllCaps="true"
-        android:paddingStart="@dimen/padding"
-        android:paddingEnd="@dimen/padding"
+        android:paddingStart="@dimen/paddingNormal"
+        android:paddingEnd="@dimen/paddingNormal"
         android:gravity="center"
-        android:background="@drawable/login_button_background"/>
+        android:background="@drawable/login_button_background"
+        />
 
 </RelativeLayout>

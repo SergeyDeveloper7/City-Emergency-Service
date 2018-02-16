@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapLocationLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/marginSmall"
+    android:orientation="vertical"
+    tools:context="com.sergeydeveloper7.cityemergencyservice.view.fragments.AddressMapFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/eventLocationMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

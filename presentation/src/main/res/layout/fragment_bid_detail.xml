@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sergeydeveloper7.cityemergencyservice.view.fragments.BidDetailFragment">
+
+    <Button
+        android:id="@+id/bidDetailEditButton"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:text="@string/bid_detail_screen_edit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeSmaller"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:letterSpacing="0.12"
+        android:background="@drawable/edit_button_background"/>
+
+    <Button
+        android:id="@+id/bidDetailDeleteButton"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:layout_marginRight="@dimen/marginNormal"
+        android:text="@string/bid_detail_screen_delete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeSmaller"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:letterSpacing="0.12"
+        android:background="@drawable/delete_button_background"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bidDetailRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bidDetailEditButton"
+        android:layout_marginTop="@dimen/marginNormal"/>
+
+    <ProgressBar
+        android:id="@+id/bidDetailProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

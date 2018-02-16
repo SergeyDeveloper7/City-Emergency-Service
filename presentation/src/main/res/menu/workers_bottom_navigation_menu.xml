@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_new_bids"
+        android:enabled="true"
+        android:icon="@drawable/ic_filter_list"
+        android:title="@string/workers_screen_new_bids"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_active_bids"
+        android:enabled="true"
+        android:icon="@drawable/ic_playlist_active_bids"
+        android:title="@string/workers_screen_active_bids"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_completed_bids"
+        android:enabled="true"
+        android:icon="@drawable/ic_completed_bids"
+        android:title="@string/workers_screen_completed_bids"
+        app:showAsAction="ifRoom" />
+</menu>

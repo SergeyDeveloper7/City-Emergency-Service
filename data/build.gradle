@@ -1,9 +1,8 @@
 apply plugin: 'com.android.library'
 
 android {
+
     compileSdkVersion 26
-
-
 
     defaultConfig {
         minSdkVersion 14
@@ -14,11 +13,21 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_ENDPOINT", "\"http://94.250.253.76:4000/\""
+        }
+        debug {
+            buildConfigField "String", "BASE_ENDPOINT", "\"http://94.250.253.76:4000/\""
+            minifyEnabled false
+            debuggable true
+            zipAlignEnabled false
         }
     }
 
@@ -26,8 +35,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    compile "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    compile "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.2.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'

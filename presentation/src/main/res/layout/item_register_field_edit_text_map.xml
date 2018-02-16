@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/registerFieldLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:letterSpacing="0.14"
+        android:textSize="@dimen/textSizeSmaller"
+        android:text="@string/new_request_screen_customers_address"
+        />
+
+    <RelativeLayout
+        android:id="@+id/backgroundRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerFieldLabelTextView"
+        android:layout_marginTop="@dimen/marginSmall"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:layout_marginRight="@dimen/marginNormal"
+        android:paddingBottom="@dimen/paddingNormal"
+        android:background="@drawable/rounded_background_white">
+
+        <TextView
+            android:id="@+id/registerFieldPlaceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginNormal"
+            android:layout_marginLeft="@dimen/marginNormal"
+            android:layout_marginRight="@dimen/marginNormal"
+            android:text="@string/new_request_screen_customers_choose_your_address"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:letterSpacing="0.14"
+            android:textSize="@dimen/textSizeSmall"
+            />
+
+        <Button
+            android:id="@+id/choosePlaceButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mainScreenEditTextHeight"
+            android:layout_below="@+id/registerFieldPlaceTextView"
+            android:layout_marginTop="@dimen/marginNormal"
+            android:layout_marginStart="@dimen/marginNormal"
+            android:layout_marginEnd="@dimen/marginNormal"
+            android:text="@string/new_request_screen_customers_choose_address"
+            android:textSize="@dimen/textSizeSmall"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.24"
+            android:textAllCaps="true"
+            android:paddingStart="@dimen/paddingNormal"
+            android:paddingEnd="@dimen/paddingNormal"
+            android:gravity="center"
+            android:background="@drawable/login_button_background"
+            />
+
+        <ProgressBar
+            android:id="@+id/placepickerProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registerFieldPlaceTextView"
+            android:layout_marginTop="@dimen/marginNormal"
+            android:layout_marginBottom="@dimen/marginNormal"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

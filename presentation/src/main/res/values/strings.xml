@@ -1,6 +1,14 @@
 <resources>
+
+    <!-- Global Constants -->
     <string name="app_name">CityEmergencyService</string>
     <string name="email_hint">email@example.com</string>
+    <string name="internet_connection_is_not_available">Internet connection is not available!</string>
+    <string name="global_internet_connection_error">Error! Please check your Internet connection or try again later</string>
+    <string name="role_worker">worker</string>
+    <string name="role_admin">admin</string>
+    <string name="log_out">Выйти из профиля</string>
+
 
     <!-- Main Screen Constants -->
     <string name="main_screen_email_address">Логин</string>
@@ -12,8 +20,9 @@
     <string name="main_screen_all_right_reserved">\Ⓒ Все права защищены</string>
     <string name="main_screen_help">Help</string>
     <string name="main_screen_register_link">Don\'t a member yet?</string>
+    <string name="main_screen_sign_in_error">Неправильный логин или пароль</string>
 
-    <!-- Main Screen Constants -->
+    <!-- Register Screen Constants -->
     <string name="register_screen_login_hint">Введите логин</string>
     <string name="register_screen_password_hint">Введите пароль</string>
     <string name="register_screen_first_name">Имя</string>
@@ -22,4 +31,67 @@
     <string name="register_screen_last_name_hint">Введите фамилию</string>
     <string name="register_screen_phone_number">Номер телефона</string>
     <string name="register_screen_phone_number_hint">Введите номер телефона</string>
+    <string name="register_screen_successful">Регистрация успешно завершена</string>
+    <string name="register_screen_no_successful">Во время регистрации произошла ошибка. Пожалуйста пройдите регистрацию снова.</string>
+
+    <!-- Admin Screen Constants -->
+    <string name="admin_screen">Окно Администратора</string>
+    <string name="admin_screen_requests">Заявки</string>
+    <string name="admin_screen_people">Рабочие</string>
+    <string name="admin_screen_id_requests">Номер заявки: </string>
+    <string name="admin_screen_requests_title">Описание: </string>
+    <string name="admin_screen_requests_status">Состояние: </string>
+    <string name="admin_screen_worker_phone">Телефон: </string>
+    <string name="admin_screen_bids_title">Показать Заявки: </string>
+
+    <!-- New Bid Screen Constants -->
+    <string name="new_request_screen_customers_name">Имя заказчика</string>
+    <string name="new_request_screen_customers_name_hint">Введите имя заказчика</string>
+    <string name="new_request_screen_customers_phone_number">Телефон заказчика</string>
+    <string name="new_request_screen_customers_phone_number_hint">Введите телефон заказчика</string>
+    <string name="new_request_screen_customers_address">Адресс заказчика</string>
+    <string name="new_request_screen_customers_address_hint">Введите адресс заказчика</string>
+    <string name="new_request_screen_bids_title">Краткое описание заявки</string>
+    <string name="new_request_screen_bids_title_hint">Введите краткое описание заявки</string>
+    <string name="new_request_screen_customers_district">Район заказчика</string>
+    <string name="new_request_screen_customers_district_hint">Введите район заказчика</string>
+    <string name="new_request_screen_customers_comments">Комментарии</string>
+    <string name="new_request_screen_customers_comments_hint">Введите комментарии</string>
+    <string name="new_request_screen_customers_choose_address">Указать адресс</string>
+    <string name="new_request_screen_customers_choose_your_address">Укажите адресс заказчика</string>
+    <string name="new_request_screen_create">Создать</string>
+    <string name="new_request_screen_create_successful">Заявка успешно создана</string>
+    <string name="new_request_screen_create_no_successful">Во время создания заявки произошла ошибка. Пожалуйста попробуйте снова.</string>
+    <string name="new_request_screen_bids_status">Статус Заявки</string>
+
+    <!-- Workers Screen Constants -->
+    <string name="workers_screen_new_bids">Новые Заявки</string>
+    <string name="workers_screen_no_bids">Нету Заявок</string>
+    <string name="workers_screen_active_bids">Активные Заявки</string>
+    <string name="workers_screen_completed_bids">Выполненые Заявки</string>
+    <string name="workers_screen_canceled_bids">Отмененные Заявки</string>
+    <string name="workers_screen_about_profile">О профиле</string>
+    <string name="workers_screen_main_title">Окно Работника</string>
+
+    <string name="workers_screen_active_bids_server_status">active</string>
+    <string name="workers_screen_in_progress_bids_server_status">in_progress</string>
+    <string name="workers_screen_completed_bids_server_status">completed</string>
+    <string name="workers_screen_canceled_bids_server_status">canceled</string>
+
+    <!-- Bid Detail Screen Constants -->
+    <string name="bid_detail_screen_edit">Редактировать</string>
+    <string name="bid_detail_screen_edit_done">Сохранить</string>
+    <string name="bid_detail_screen_delete">Удалить</string>
+    <string name="bid_detail_screen_title">Просмотр Заявки</string>
+    <string name="bid_detail_screen_no_information">Информация не указана</string>
+    <string name="bid_detail_screen_enter_information">Введите информацию</string>
+    <string name="bid_detail_screen_view_address">Показать на карте</string>
+    <string name="bid_detail_screen_delete_successful">Заявка успешно удалена</string>
+    <string name="bid_detail_screen_delete_no_successful">Во время удаления заявки произошла ошибка. Пожалуйста попробуйте снова.</string>
+
+    <!-- Address Map Screen Constants -->
+    <string name="address_map_screen_title">Карта</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

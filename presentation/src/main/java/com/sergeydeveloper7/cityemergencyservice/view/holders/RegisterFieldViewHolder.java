@@ -52,6 +52,27 @@ public class RegisterFieldViewHolder extends RecyclerView.ViewHolder {
                 registerFieldEnterInformationEditText.setHint(context.getString(R.string.register_screen_phone_number_hint));
                 registerFieldEnterInformationEditText.setInputType(InputType.TYPE_CLASS_PHONE);
                 break;
+            case Const.REGISTER_FIELD_CUSTOMERS_NAME:
+                registerFieldLabelTextView.setText(context.getString(R.string.new_request_screen_customers_name));
+                registerFieldEnterInformationEditText.setHint(context.getString(R.string.new_request_screen_customers_name_hint));
+                break;
+            case Const.REGISTER_FIELD_CUSTOMERS_PHONE_NUMBER:
+                registerFieldLabelTextView.setText(context.getString(R.string.new_request_screen_customers_phone_number));
+                registerFieldEnterInformationEditText.setHint(context.getString(R.string.new_request_screen_customers_phone_number_hint));
+                registerFieldEnterInformationEditText.setInputType(InputType.TYPE_CLASS_PHONE);
+                break;
+            case Const.REGISTER_FIELD_CUSTOMERS_DISTRICT:
+                registerFieldLabelTextView.setText(context.getString(R.string.new_request_screen_customers_district));
+                registerFieldEnterInformationEditText.setHint(context.getString(R.string.new_request_screen_customers_district_hint));
+                break;
+            case Const.REGISTER_FIELD_CUSTOMERS_COMMENTS:
+                registerFieldLabelTextView.setText(context.getString(R.string.new_request_screen_customers_comments));
+                registerFieldEnterInformationEditText.setHint(context.getString(R.string.new_request_screen_customers_comments_hint));
+                break;
+            case Const.REGISTER_FIELD_BIDS_TITLE:
+                registerFieldLabelTextView.setText(context.getString(R.string.new_request_screen_bids_title));
+                registerFieldEnterInformationEditText.setHint(context.getString(R.string.new_request_screen_bids_title_hint));
+                break;
         }
     }
 }

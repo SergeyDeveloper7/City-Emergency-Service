@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/marginNormal"
+    android:layout_marginLeft="@dimen/marginNormal"
+    android:layout_marginRight="@dimen/marginNormal"
+    android:background="@drawable/rounded_background_white">
+
+    <TextView
+        android:id="@+id/requestsNumberTextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:layout_marginTop="@dimen/marginSmall"
+        android:textColor="@color/white"
+        android:text="@string/admin_screen_id_requests"
+        />
+
+    <TextView
+        android:id="@+id/requestsNumberTextViewDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginSmall"
+        android:layout_toRightOf="@+id/requestsNumberTextViewTitle"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:textColor="@color/white"
+        android:text="123"
+        />
+
+    <TextView
+        android:id="@+id/requestsTitleTextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:layout_marginBottom="@dimen/marginSmall"
+        android:layout_below="@+id/requestsNumberTextViewTitle"
+        android:textColor="@color/white"
+        android:text="@string/admin_screen_requests_title"
+        />
+
+    <TextView
+        android:id="@+id/requestsTitleTextViewDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/requestsNumberTextViewDetail"
+        android:layout_toRightOf="@+id/requestsTitleTextViewTitle"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:textColor="@color/white"
+        android:text="Починить канализацию"
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/requestsStatusTextViewTitle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/marginNormal"-->
+        <!--android:layout_below="@+id/requestsTitleTextViewTitle"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:paddingBottom="@dimen/paddingSmall"-->
+        <!--android:text="@string/admin_screen_requests_status"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/requestsStatusTextViewDetail"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/requestsTitleTextViewDetail"-->
+        <!--android:layout_toRightOf="@+id/requestsTitleTextViewTitle"-->
+        <!--android:layout_marginLeft="@dimen/marginNormal"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:text="Выполняется"-->
+        <!--/>-->
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleMainLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:textSize="@dimen/textSizeMiddle"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:letterSpacing="0.04"
+        android:alpha="0.4"
+        android:text=""
+        />
+
+    <RelativeLayout
+        android:id="@+id/informationContentRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginSmall"
+        android:layout_below="@+id/titleMainLabel"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:layout_marginBottom="@dimen/marginNormal">
+
+        <TextView
+            android:id="@+id/titleDetailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bottomMenuColor"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:letterSpacing="0.04"
+            android:textSize="@dimen/textSizeMiddle"
+            android:text=""
+            />
+
+        <EditText
+            android:id="@+id/editInformationEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bottomMenuColor"
+            android:textSize="@dimen/textSizeMiddle"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:letterSpacing="0.04"
+            android:hint="@string/bid_detail_screen_enter_information"
+            android:background="@null"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/fieldButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mainScreenEditTextHeight"
+        android:layout_marginBottom="@dimen/marginNormal"
+        android:layout_marginStart="@dimen/marginNormal"
+        android:layout_marginEnd="@dimen/marginNormal"
+        android:layout_below="@+id/informationContentRelativeLayout"
+        android:textSize="@dimen/textSizeSmall"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.24"
+        android:textAllCaps="true"
+        android:paddingStart="@dimen/paddingNormal"
+        android:paddingEnd="@dimen/paddingNormal"
+        android:gravity="center"
+        android:background="@drawable/login_button_background"
+        android:visibility="gone"
+        android:text="@string/bid_detail_screen_view_address"
+        />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fieldButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginSmall"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:layout_marginRight="@dimen/marginNormal"
+        android:background="@color/greyText"
+        />
+</RelativeLayout>

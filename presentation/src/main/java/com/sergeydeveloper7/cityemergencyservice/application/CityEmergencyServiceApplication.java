@@ -12,12 +12,18 @@ import com.sergeydeveloper7.cityemergencyservice.di.modules.ApplicationModule;
 
 public class CityEmergencyServiceApplication extends MultiDexApplication {
 
+    private static CityEmergencyServiceApplication mInstance;
     private ApplicationComponent applicationComponent;
 
     @Override
     public void onCreate() {
         super.onCreate();
+        mInstance = this;
         this.initializeInjector();
+    }
+
+    public static synchronized CityEmergencyServiceApplication getInstance() {
+        return mInstance;
     }
 
     private void initializeInjector() {

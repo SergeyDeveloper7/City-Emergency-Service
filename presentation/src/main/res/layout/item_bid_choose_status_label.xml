@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleMainLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:textSize="@dimen/textSizeMiddle"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:letterSpacing="0.04"
+        android:alpha="0.4"
+        android:text="@string/new_request_screen_bids_status"
+        />
+
+    <Spinner
+        android:id="@+id/chooseStatusSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleMainLabel"
+        android:layout_marginLeft="@dimen/marginSmall"
+        android:layout_marginRight="@dimen/marginNormal"
+        android:layout_marginTop="@dimen/marginSmall"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/chooseStatusSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:layout_marginLeft="@dimen/marginNormal"
+        android:layout_marginRight="@dimen/marginNormal"
+        android:background="@color/greyText"
+        />
+</RelativeLayout>
